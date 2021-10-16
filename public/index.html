@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/main.js" defer></script>
+    <title>ToDoApp</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">To Do Application</h1>
+        <div class="list__container">
+            <div class="list list__grow">
+                <div class="list__header">
+                    <h2 class="list__title">Zadania do wykonania</h2>
+                    <i class="fas fa-angle-up active arrow"></i>
+                    <i class="fas fa-angle-down arrow"></i>
+                </div>
+                <ul class="list__toDo list__list">
+                    <!-- Lista Zadań do zrobienia -->
+                </ul>
+                <div class="list__addNewTask">
+                    <i class="fas fa-plus"></i>
+                    <p class="list__addNewTaskText">Dodaj zadanie</p>
+                </div>
+            </div>
+            <div class="list">
+                <div class="list__header">
+                    <h2 class="list__title">Wykonane zadania</h2>
+                    <i class="fas fa-angle-up arrow"></i>
+                    <i class="fas fa-angle-down active arrow"></i>
+                </div>
+                <ul class="list__done list__list">
+                    <!-- Lista zrobionych zadań -->
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__text">To Do Application by <strong>Question Mark</strong></p>
+            <p class="footer__text">Wszelkie prawa absolutnie <span class="strong">NIE</span> są zastrzeżone &copy; 2021</p>
+            <p class="footer__text">Pozdrawiam wszystkich kursantów oraz wspaniałych samurajów MegaK!</p>
+        </footer>
+        <div class="popup none">
+            <form class="form">
+                <input type="text" class="form__inpTask" placeholder="Wpisz zadanie...">
+                <div class="buttons">
+                    <div class="button button__back">
+                        <div class="button__background">Wróć</div>
+                    </div>
+                    <div class="button button__add">
+                        <button type="submit" class="button__background">Dodaj</button>
+                    </div>
+                </div>
+                <p class="form__response"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
